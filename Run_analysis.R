@@ -56,7 +56,7 @@ colnames(s) <- names(subdata)[3:81]
 activity_subject <- rbind(a,s)
 
 #write out the final data
-write.table(activity_subject, file = "tidy_mean_for_each_activity_and_subject.csv")
+write.table(activity_subject, file = "tidy_mean_for_each_activity_and_subject.txt")
 
 
 # m <- cbind(m, tapply(subdata[,3], subdata$Activity, mean))
